@@ -7,6 +7,7 @@ $cl_prefix_false:  #CF9;
 $cl_prefix_true: #DDF7FF;
 
 @mixin linear-gradient($from, $to) {
+	background-image: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
 	background-image: -webkit-linear-gradient(top,       $from 0%, $to 100%);
 	background-image:    -moz-linear-gradient(top,       $from 0%, $to 100%);
 	background-image:      -o-linear-gradient(top,       $from 0%, $to 100%);
@@ -20,16 +21,18 @@ $cl_prefix_true: #DDF7FF;
  }
 
  html {
-	 overflow-y: scroll;
+	overflow-y: scroll;
  	-webkit-hyphens: auto;
-     -moz-hyphens: auto;
+       -moz-hyphens: auto;
 	    -ms-hyphens: auto;
 	     -o-hyphens: auto;
 	        hyphens: auto;
 
-	/* http://necolas.github.com/normalize.css/2.0.1/normalize.css */
+	/* https://necolas.github.io/normalize.css/2.0.1/normalize.css */
 	-webkit-text-size-adjust: 100%;
-	    -ms-text-size-adjust: 100%;
+	   -moz-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+			text-size-adjust: 100%;
 
 	background: darken($cl_white,5%) url(../img/shattered.png) repeat 0 0;
 	color: $cl_black;
@@ -42,8 +45,12 @@ body {
 	max-width: 50em;
 	margin: 1em auto;
 	padding: 2em 3em;
-	border-radius: .125em;
-	box-shadow: 0 0 3px 0 rgba(0,0,0,0.3)
+	-webkit-border-radius: .125em;
+	   -moz-border-radius: .125em;
+			border-radius: .125em;
+	-webkit-box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+	   -moz-box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+			box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
 }
 img {
 	border: 0;
@@ -89,9 +96,13 @@ a {
 	margin: .5em;
 	padding: .25em 1em;
 	border: 1px solid $cl_link;
-	border-radius: .25em;
+	-webkit-border-radius: .25em;
+	   -moz-border-radius: .25em;
+			border-radius: .25em;
 	cursor: pointer;
 	-webkit-appearance: none;
+	   -moz-appearance: none;
+			appearance: none;
 
 	&:hover,
 	&:focus,
@@ -131,10 +142,14 @@ p { margin: 0 0 1em 0; }
 }
 
 .feature {
-	border-radius: .25em;
+	-webkit-border-radius: .25em;
+	   -moz-border-radius: .25em;
+			border-radius: .25em;
 	margin: 0 0 1em 0;
 	padding: .5em;
-	box-shadow: 0 0 .5em rgba(0,0,0,0.2);
+	-webkit-box-shadow: 0 0 .5em rgba(0,0,0,0.2);
+	   -moz-box-shadow: 0 0 .5em rgba(0,0,0,0.2);
+			box-shadow: 0 0 .5em rgba(0,0,0,0.2);
 
 	&.is-collapsed {
 		max-height: 3.5em;
@@ -158,7 +173,9 @@ p { margin: 0 0 1em 0; }
 	margin: 1em 0;
 }
 .feature__header {
-	border-radius: .25em;
+	-webkit-border-radius: .25em;
+	   -moz-border-radius: .25em;
+			border-radius: .25em;
 	text-shadow: 0 1px 0 $cl_white;
 	line-height: 1;
 	& h2:first-letter {
@@ -176,10 +193,14 @@ p { margin: 0 0 1em 0; }
 			top: .8em;
 			left: .75em;
 			background: $cl_white;
-			border-radius: 50%;
+			-webkit-border-radius: 50%;
+			   -moz-border-radius: 50%;
+					border-radius: 50%;
 			padding: .5em;
 			line-height: 1;
-			box-shadow: 0 0 .5em rgba(0,0,0,0.2);
+			-webkit-box-shadow: 0 0 .5em rgba(0,0,0,0.2);
+			   -moz-box-shadow: 0 0 .5em rgba(0,0,0,0.2);
+					box-shadow: 0 0 .5em rgba(0,0,0,0.2);
 		}
 	}
 }
@@ -192,7 +213,9 @@ p { margin: 0 0 1em 0; }
 	color: $cl_white;
 	font-size: .75em;
 	text-align: right;
-	border-radius: 0 0 .25em .25em;
+	-webkit-border-radius: 0 0 .25em .25em;
+	   -moz-border-radius: 0 0 .25em .25em;
+			border-radius: 0 0 .25em .25em;
 
 	& a {
 		color: inherit;
@@ -218,7 +241,9 @@ p { margin: 0 0 1em 0; }
 		position: absolute;
 		right: 1.25em;
 		top: 1em;
-		border-radius: .25em;
+		-webkit-border-radius: .25em;
+		   -moz-border-radius: .25em;
+				border-radius: .25em;
 		padding: .25em .5em;
 	}
 }
@@ -262,4 +287,3 @@ p { margin: 0 0 1em 0; }
 	.feature__footer a { margin-left: .2em; }
 	.feature__header:after { display: none; }
 }
-

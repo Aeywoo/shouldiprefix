@@ -1,7 +1,5 @@
 /*
- *
  * Your main.js code
- *
  */
 
 // Avoid `console` errors in browsers that lack a console.
@@ -65,6 +63,4 @@
             .removeClass(activeCls);
         featuresList.filter(filterCallbacks[this.id]);
     });
-
 }());
-

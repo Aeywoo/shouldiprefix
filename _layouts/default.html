@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 	<head>
-		<meta charset="utf-8">
+		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -19,7 +19,6 @@
 
 		- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
 
-
 		<meta name="author" content="David Hund - Valued Standards"/>
 		<link rel="author" href="https://plus.google.com/u/0/117376077765230391641/posts"/>
 		<meta name="description" content="{{page.description}}">
@@ -36,32 +35,41 @@
 		<link rel="stylesheet" href="/static/css/main.css">
 		<link rel="stylesheet" href="/static/js/vendor/prism.css">
 
-		<script>with(document.documentElement){className=className.replace(/\bno-js\b/,'js')}</script>
+		<script>document.documentElement.className = className.replace(/\bno-js\b/,'js')</script>
+
+		<!--<script>with(document.documentElement){className=className.replace(/\bno-js\b/,'js')}</script>-->
 
 		<!--[if lt IE 9]><script src="/static/js/vendor/html5shiv.js"></script><![endif]-->
 	</head>
 	<body class="language-css">
 
 		<header role="banner">
-			<p class="lastmod"><a href="https://github.com/davidhund/shouldiprefix/commits/gh-pages" title="See Changelog/Commits">{{site.time | date:"%d/%m/%y"}}</a> | <a href="http://valuedstandards.com">@valuedstandards</a> |  <a href="https://github.com/davidhund/shouldiprefix/">Help me!</a></p>
+			<!--<p class="lastmod"><a href="https://github.com/davidhund/shouldiprefix/commits/gh-pages" title="See Changelog/Commits">{{site.time | date:"%d/%m/%y"}}</a> | <a href="http://valuedstandards.com">@valuedstandards</a> |  <a href="https://github.com/davidhund/shouldiprefix/">Help me!</a></p>-->
+			<p class="lastmod"><a href="https://github.com/aeywoo/shouldiprefix/tree/gh-pages" title="See Changelog/Commits" target="_blank">{{site.time | date:"%d/%m/%y"}}</a> | <a href="https://valuestandards.com">@valuestandards</a> | <a href="https://github.com/aeywoo/shouldiprefix" title="GitHub repository" target="_blank">Feel free to contribute!</a></p>
 		</header>
 
 		{{content}}
 
 		<footer role="contentinfo">
+			<p>Originally designed by <a href="https://valuedstandards.com" title="Valued Standards" target="_blank">David Hund</a> — <a href="https://twitter.com/valuedstandards" title="Twitter account" target="_blank">@valuedstandards</a></p>
+			<p>Maintained by <a href="https://aeywoo.com" title="Aeywoo">Aeywoo</a> — <a href="https://bsky.app/profile/aeywoo.com" title="Bluesky account" target="_blank"></a></p>
+			<p><em>Please contribute</em>: <a href="https://github.com/aeywoo/shouldiprefix/" title="GitHub repository" target="_blank">GitHub</a> | <a href="https://github.com/aeywoo/shouldiprefix/issues" title="GitHub issues" target="_blank">Issues</a> | <a href="disclaimer.html" title="Disclaimers">Disclaimer</a></p>
+		</footer>
+
+		<!--<footer role="contentinfo">
 			<p>A Thing by <a href="http://valuedstandards.com">David Hund</a> — <a href="http://twitter.com/valuedstandards">@valuedstandards</a></p>
 			<p><em>Please help</em>: <a href="https://github.com/davidhund/shouldiprefix/">Github</a> | <a href="https://github.com/davidhund/shouldiprefix/issues">Issues</a> |  <a href="disclaimer.html">Disclaimer</a></p>
 			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-			<!-- SIP RWD -->
+			--><!-- SIP RWD --><!--
 			<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-7751344564870139" data-ad-slot="5611386201" data-ad-format="auto"></ins>
 			<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
 			<p><a href="#">Top</a></p>
-		</footer>
+		</footer>-->
 
 		<script src="/static/js/vendor/all.min.js"></script>
 		<script src="/static/js/main.js"></script>
 
-		<script type="text/javascript">
+		<!--<script type="text/javascript">
 		  var _gaq = _gaq || [];
 		  _gaq.push(['_setAccount', 'UA-5040498-10']);
 		  _gaq.push(['_trackPageview']);
@@ -70,6 +78,6 @@
 		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		  })();
-		</script>
+		</script>-->
 	</body>
 </html>
